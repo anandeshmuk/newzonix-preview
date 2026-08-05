@@ -81,7 +81,7 @@ const config: Config = {
           "0%": { transform: "rotate(360deg)" },
           "100%": { transform: "rotate(0deg)" },
         },
-        pulse-glow: {
+        "pulse-glow": {
           "0%, 100%": { opacity: "0.6" },
           "50%": { opacity: "1" },
         },
