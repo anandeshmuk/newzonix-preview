@@ -34,8 +34,8 @@ export function CTA() {
               enterprise pilot built around your stack.
             </p>
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-              <Button href="/contact" variant="primary" arrow>
-                Start free trial
+              <Button href="https://app.newzonix.com/signup" variant="primary" arrow>
+                Start Here
               </Button>
               <Button href="/contact" variant="ghost">
                 Talk to sales

@@ -48,8 +48,8 @@ export function PlatformClient() {
         title="One governed layer for how your business actually runs"
         description="NEWZONIX connects your data, defines your workflows, and puts AI agents to work executing them — with visibility and control at every step."
       >
-        <Button href="/contact" variant="primary" arrow>
-          Start free trial
+        <Button href="https://app.newzonix.com/signup" variant="primary" arrow>
+          Start Here
         </Button>
         <Button href="/pricing" variant="ghost">
           View pricing

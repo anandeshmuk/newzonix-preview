@@ -77,13 +77,13 @@ export function Header() {
 
           <div className="hidden items-center gap-3 lg:flex">
             <Link
-              href="/contact"
+              href="https://app.newzonix.com/login"
               className="rounded-lg px-4 py-2 text-[14.5px] font-medium text-ink-soft transition-colors hover:text-white"
             >
               Sign in
             </Link>
-            <Button href="/contact" variant="gradient" className="!px-5 !py-2.5 !text-[14px]">
-              Start free trial
+            <Button href="https://app.newzonix.com/signup" variant="gradient" className="!px-5 !py-2.5 !text-[14px]">
+              Start Here
             </Button>
           </div>
 
@@ -117,11 +117,11 @@ export function Header() {
                 </Link>
               ))}
               <div className="mt-2 flex flex-col gap-2 border-t border-white/10 pt-3">
-                <Link href="/contact" className="rounded-lg px-3 py-2 text-[15px] font-medium text-ink-soft">
+                <Link href="https://app.newzonix.com/login" className="rounded-lg px-3 py-2 text-[15px] font-medium text-ink-soft">
                   Sign in
                 </Link>
-                <Button href="/contact" variant="gradient" className="w-full">
-                  Start free trial
+                <Button href="https://app.newzonix.com/signup" variant="gradient" className="w-full">
+                  Start Here
                 </Button>
               </div>
             </div>

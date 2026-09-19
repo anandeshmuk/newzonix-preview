@@ -52,8 +52,8 @@ export function Hero() {
             transition={{ duration: 0.7, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
             className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center"
           >
-            <Button href="/contact" variant="primary" arrow>
-              Start free trial
+            <Button href="https://app.newzonix.com/signup" variant="primary" arrow>
+              Start Here
             </Button>
             <Button href="/platform" variant="ghost">
               Explore the platform
