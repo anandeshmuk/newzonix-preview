@@ -30,8 +30,8 @@ export function CTA() {
               Put your operations on autopilot — without losing control
             </h2>
             <p className="mx-auto mt-6 max-w-xl text-lg text-ink-soft">
-              Start a 14-day free trial, or talk to our team about a guided
-              enterprise pilot built around your stack.
+              Start with the 7-Day Offer for ₹49, or talk to our team about a
+              guided enterprise pilot built around your stack.
             </p>
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Button href="https://app.newzonix.com/signup" variant="primary" arrow>

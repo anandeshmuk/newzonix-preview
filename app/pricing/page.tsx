@@ -4,7 +4,7 @@ import { PricingClient } from "@/components/pages/PricingClient";
 export const metadata: Metadata = {
   title: "Pricing",
   description:
-    "Simple, transparent pricing for NEWZONIX — Launch, Scale, and Enterprise plans, each with a 14-day free trial.",
+    "Simple, transparent pricing for NEWZONIX — 7-Day Offer, Monthly, Quarterly, 6-Month, and Yearly plans.",
   alternates: {
     canonical: "/pricing",
   },

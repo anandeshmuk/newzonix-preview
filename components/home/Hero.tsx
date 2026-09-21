@@ -6,7 +6,7 @@ import { OrbitSystem } from "../illustrations/OrbitSystem";
 import { ParticleField } from "./ParticleField";
 import { CheckIcon } from "../icons/Icons";
 
-const trustPoints = ["SOC 2 Type II", "99.98% uptime", "14-day free trial"];
+const trustPoints = ["SOC 2 Type II", "99.98% uptime", "7-Day Offer from ₹49"];
 
 export function Hero() {
   return (

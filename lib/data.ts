@@ -117,53 +117,71 @@ export const solutions = [
   },
 ];
 
-export const pricingPlans = [
+/**
+ * Canonical NewZonix plan pricing - the SINGLE source of truth for the
+ * marketing site. priceINR is the real, canonical amount (whole rupees);
+ * everything shown in another currency (see lib/currency.ts) is an
+ * approximate, display-only conversion computed FROM this number, never
+ * a separately maintained figure. Feature lists are intentionally empty
+ * for now - no authoritative per-plan feature/quota differentiation was
+ * provided, and inventing one here would risk making a false product
+ * claim; the existing card layout already renders correctly with none.
+ */
+export type PricingPlan = {
+  name: string;
+  priceINR: number;
+  period: string;
+  description: string;
+  cta: string;
+  highlighted: boolean;
+  features: string[];
+};
+
+export const pricingPlans: PricingPlan[] = [
   {
-    name: "Launch",
-    price: "$79",
-    period: "/mo",
-    description: "For founders getting an operating business off the ground.",
-    cta: "Start free trial",
+    name: "7-Day Offer",
+    priceINR: 49,
+    period: "7 days",
+    description: "Try NewZonix for a full week at a fraction of the cost.",
+    cta: "Get Started",
     highlighted: false,
-    features: [
-      "Up to 3 automated workflows",
-      "1 unified data workspace",
-      "Standard integrations",
-      "Email support",
-      "Usage-based billing tools",
-    ],
+    features: [],
   },
   {
-    name: "Scale",
-    price: "$349",
-    period: "/mo",
-    description: "For growing teams automating core operations.",
-    cta: "Start free trial",
-    highlighted: true,
-    features: [
-      "Unlimited automated workflows",
-      "Unified Data Core with versioning",
-      "All native integrations + open API",
-      "Approval gates & audit trails",
-      "Priority support & onboarding",
-      "Live forecasting models",
-    ],
+    name: "Monthly",
+    priceINR: 1499,
+    period: "per month",
+    description: "Flexible, month-to-month access to the platform.",
+    cta: "Get Started",
+    highlighted: false,
+    features: [],
   },
   {
-    name: "Enterprise",
-    price: "Custom",
-    period: "",
-    description: "For organizations with compliance and scale requirements.",
-    cta: "Talk to sales",
+    name: "Quarterly",
+    priceINR: 2499,
+    period: "per 3 months",
+    description: "Save more with a 3-month commitment.",
+    cta: "Get Started",
     highlighted: false,
-    features: [
-      "Dedicated infrastructure & SLA",
-      "SOC 2 Type II / ISO 27001 controls",
-      "Private data residency",
-      "Custom agent development",
-      "Dedicated success engineer",
-      "Single sign-on & SCIM",
-    ],
+    features: [],
+  },
+  {
+    name: "6-Month",
+    priceINR: 4999,
+    period: "per 6 months",
+    description: "Extended access for teams settling into a routine.",
+    cta: "Get Started",
+    highlighted: false,
+    features: [],
+  },
+  {
+    name: "Yearly",
+    priceINR: 8999,
+    period: "per year",
+    description: "The best value for long-term, ongoing use.",
+    cta: "Get Started",
+    highlighted: false,
+    features: [],
   },
 ];
 
@@ -196,7 +214,7 @@ export const faqs = [
   {
     question: "Is there a free trial?",
     answer:
-      "Yes, Launch and Scale plans include a 14-day free trial with full feature access, no credit card required. Enterprise plans include a guided pilot scoped with our solutions team.",
+      "Start with the 7-Day Offer to try NewZonix at a fraction of the regular price, then move to a Monthly, Quarterly, 6-Month, or Yearly plan whenever you're ready.",
   },
 ];
 
